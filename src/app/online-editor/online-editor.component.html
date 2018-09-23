@@ -1,0 +1,22 @@
+<section class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pull-left p-0 onlineEditor-section">
+  <div class="onlineEditor-panel">
+    <div ace-editor [(text)]="text" style="height:200px;"></div> 
+    <select name="language" [(ngModel)]="selectedLanguage">
+      <option *ngFor='let language of languageList' [ngValue]='language.id' >{{language.name}}</option>
+    </select>
+    <button (click)="submitData(text)">Submit</button>
+    <div>{{onlineCompilerService.codeResult}}</div>
+  </div>
+</section>
+<!-- <div class="online-editor">
+  <div>
+     
+  <div ace-editor [(text)]="text" style="height:200px;"></div> 
+  {{text}}
+  <select name="language" [(ngModel)]="selectedLanguage">
+          <option *ngFor='let language of languageList' [ngValue]='language.id' >{{language.name}}</option>
+      </select>
+  </div>
+  <button (click)="submitData(text)">Submit</button>
+  {{onlineCompilerService.codeResult}}
+</div> -->

@@ -1,0 +1,32 @@
+
+.leftMenu-panel{
+    position: relative;
+    display: inline-block;
+    
+    width: 100%;
+}   
+.leftMenu-panel>ul{
+    top:52px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding: 0px;
+}
+.leftMenu-panel>ul>li{
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #f5f2f2;
+}
+.leftMenu-panel>ul>li>a{
+    padding: 10px 0px 10px 20px;
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
